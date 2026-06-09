@@ -1,0 +1,42 @@
+name: edulearn
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.4.2+1
+  path: ^1.9.1
+  provider: ^6.1.5+1
+  shared_preferences: ^2.3.0
+  image_picker: ^1.1.2 # Retained for profile picture uploads
+  audioplayers: ^6.5.1 # 🌟 Added for offline calm fixed study music asset playback
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  # Registering physical application asset resources
+  assets:
+    - assets/images/
+    - assets/audio/ # 🌟 Added folder target path containing your fixed mp3 music files
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/graduation_cap.jpg"
+  adaptive_icon_background: "#FFB8E0"
+  adaptive_icon_foreground: "assets/images/graduation_cap.jpg"
